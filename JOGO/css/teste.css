@@ -1,0 +1,189 @@
+ *{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.plano-de-fundo{
+  width: 80vw;
+  height: 95vh;
+  border: 20px solid rgb(0, 0, 0);
+  margin: 0% auto;
+  box-sizing: border-box;
+  display: flex;/*não precisa colocar o ROW, pois ja vem de fabrica */
+  position: relative;
+  /*overflow: hidden;/*tudo que sair some*/
+}
+
+.linha{
+  width: 33%;
+  align-self: stretch;
+}
+
+#linha1 {
+  border: 1px solid rgb(255, 0, 0); 
+  background-color: rgb(255, 0, 0);
+}
+
+#linha2 {
+  border: 1px solid rgb(0, 47, 255); 
+  background-color:rgb(0, 47, 255);
+}
+
+#linha3 {
+ 
+  border: 1px solid rgb(238, 255, 0); 
+  background-color:rgb(238, 255, 0);
+}
+
+
+
+.botoes
+{
+font-size: bold;
+border-radius: 30px;
+cursor: pointer;
+
+}
+
+#options {
+  top: 0;
+  right: 0;
+  border: 1px solid rgb(0, 255, 13); 
+  width: 4%;
+  height: 5vh;
+  position: absolute;
+  font-size:55px;
+}
+
+
+#start {
+  top: 46%;
+  right: 46%;
+  border: 1px solid rgb(0, 255, 13); 
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  font-size:55px;
+
+}
+
+.Hub {
+  width: 4%;
+  height: 15vh;
+  top: 200px;
+  right: 0;
+  position: absolute;
+  font-size: 20px;
+  border: 1px solid rgb(183, 0, 255);
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+
+}
+
+.timer
+{ 
+   font-size: 50px;
+   padding-left: 20px;
+   padding-top: 10px;
+
+   font-size: bold;
+
+
+}
+
+
+.inimigos
+{
+  width: 18vw;
+  height: 17vh;
+  border: 10px solid rgb(0, 225, 255); 
+  bottom: 100%;
+  background-color: rgb(17, 0, 255);
+
+}
+
+#Malphite {
+  animation: pedra_moves  5s infinite linear;
+  position: absolute;
+  animation-play-state: paused;
+
+}
+
+#Skarner {
+  animation: cristal_moves 6s infinite linear;
+  position: absolute;
+  animation-play-state: paused;
+}
+
+#Singed {
+  animation: Singed_moves  4s infinite linear;
+  position: absolute;
+  animation-play-state: paused;
+
+}
+
+
+
+@keyframes pedra_moves{
+from{
+  bottom: 100%;/*spawna no lugar mais agradavel a vista*/
+  left: 150px;
+}
+to{
+  bottom: -20%;/*spawn mais rapido possivel é com 600, sem perder animação */
+  left: 150px;
+}
+}
+
+
+@keyframes cristal_moves{
+  from{
+    bottom: 100%;/*spawna no lugar mais agradavel a vista*/
+    left: 2900px;
+  
+  }
+  to{
+    bottom: -20%;/*spawn mais rapido possivel é com 600, sem perder animação */
+    left: 2900px;
+  
+  }
+}
+
+
+@keyframes Singed_moves{
+  from{
+    bottom: 100%;
+    left: 1560px;
+  
+  }
+  to{
+    bottom: -20%;/*spawn mais rapido possivel é com 600, sem perder animação */
+    left: 1560px;
+  
+  }
+}
+
+.player{
+  width: 9vw;
+  height: 13vh;
+  border: 10px solid rgb(0, 225, 255); 
+  top: 1900px;
+  left: 1860px;
+  
+  position: absolute;
+  transition: 0.1s; 
+}
+
+
+
+#mapa {
+  width: 100px;
+  height: 100%;
+  object-fit: cover;
+
+}
