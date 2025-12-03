@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/teste.css">
+</head>
+<body>
+  <div class="container">
+    <img src="../assets/temo-removebg-preview.png" 
+         alt="rocket" 
+         class="player" 
+         id="teemo">
+
+    <img src="../assets/Malph.webp"  
+         alt="malphite" 
+         class="enemy" 
+         id="malphite">
+
+    <img src="../assets/Skarner.jpg" 
+         alt="skarner" 
+         class="enemy" 
+         id="skarner">
+
+    <img src="../assets/Singed.jpg" 
+         alt="singed" 
+         class="enemy" 
+         id="singed">
+
+    <img src="../assets/viego_2j4z.jpg" 
+         alt="viego" 
+         class="enemy" 
+         id="viego">
+
+    <div id="hud">
+      <div id="time">Score: 0</div>
+      <div id="timer">Tempo: 0s</div>
+    </div>
+
+    <div id="gameOverHud" class="hidden">
+      <h2>Você perdeu!</h2>
+      <button onclick="history.back()">Voltar</button>
+      <button onclick="location.reload()">Recomeçar</button>
+      <button onclick="showRecords()">Ver Recordes</button>
+      <div id="records"></div>
+    </div>
+  </div>
+
+  <script src="../php/testejs.js"></script>
+</body>
+</html>

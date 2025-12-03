@@ -1,0 +1,114 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  body {
+    background-image: url(/assets/14350820_5471985.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+
+  form {
+    width: 400px;
+  }
+
+
+
+textarea {
+    background-color: inherit;
+    border: 2px solid black; 
+}
+
+input{
+    background-color: inherit;
+    border: 2px solid black;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(25, 25, 136);
+    color: white;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+    text-decoration: none;
+  }
+
+  .btn a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .btn.animated-button.thar-three {
+    text-decoration: underline;                                                                   
+  }
+
+  .btn.animated-button.thar-three {
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid rgb(25, 25, 136);
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  text-decoration: none;
+}
+
+.btn.animated-button.thar-three:hover {
+	color: #000 !important;
+	background-color: transparent;
+	text-shadow: nthree;
+  text-decoration: none;
+}
+
+.btn.animated-button.thar-three:hover:before {
+	left: 0%;
+	right: auto;
+	width: 100%;
+  text-decoration: none;
+}
+
+.btn.animated-button.thar-three:before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background-color: rgb(25, 25, 136);
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  text-decoration: none;
+}
+
+#quantidade_membros {
+    width: 100px;
+}
+
+#descricao {
+    width: 300px;
+    height: 50px;
+    margin-top: 5px;
+}
+
+.cria_liga {
+    margin-bottom: 20px;
+}
